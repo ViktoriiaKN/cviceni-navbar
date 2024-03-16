@@ -1,6 +1,10 @@
 /* nejsme vcerejsi, pouzivame moderni box model */
 *, :after, :before { box-sizing: border-box; }
 
+ul {
+	list-style: none;
+}
+
 body {
 	font-family: sans-serif;
 }
@@ -9,6 +13,29 @@ body {
 .hlavicka {
 	background-color: #3498db;
 	color: white;
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo {
+	margin: 10px 20px;
+	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+	font-size: 30px;
+}
+
+.navbar {
+	display: flex;
+}
+
+.nav-hover {
+	margin: 1px;
+	
+}
+
+.nav-hover:hover {
+background-color: white;
 }
 
 a {
